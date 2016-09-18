@@ -84,15 +84,19 @@
 
 
 
-<meta name="description" content="技术随笔">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MAGIC CODE">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="关于安装前的吐槽   今天终于抽时间在电脑部署了GitHub博客，真的想说拖延症害死人，早期在点点和CSDN上面断断续续写了点东西，但是没能坚持下来，况且技术性也不高，不值得花时间写一些无用的东西，我想着在最后的学生生涯做一些有意义的事情。
+安装过程遇到的问题   电脑为Ubuntu 14.04 64bit。首先就是安装Node.js,开始时候按照官网推荐的nvm方式安装，但是发现   1$ nv">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu+Hexo创建个人GitHub Pages博客">
+<meta property="og:url" content="http://yoursite.com/2016/07/19/Ubuntu+Hexo创建个人GitHub Pages博客/index.html">
 <meta property="og:site_name" content="MAGIC CODE">
-<meta property="og:description" content="技术随笔">
+<meta property="og:description" content="关于安装前的吐槽   今天终于抽时间在电脑部署了GitHub博客，真的想说拖延症害死人，早期在点点和CSDN上面断断续续写了点东西，但是没能坚持下来，况且技术性也不高，不值得花时间写一些无用的东西，我想着在最后的学生生涯做一些有意义的事情。
+安装过程遇到的问题   电脑为Ubuntu 14.04 64bit。首先就是安装Node.js,开始时候按照官网推荐的nvm方式安装，但是发现   1$ nv">
+<meta property="og:updated_time" content="2016-09-18T11:20:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MAGIC CODE">
-<meta name="twitter:description" content="技术随笔">
+<meta name="twitter:title" content="Ubuntu+Hexo创建个人GitHub Pages博客">
+<meta name="twitter:description" content="关于安装前的吐槽   今天终于抽时间在电脑部署了GitHub博客，真的想说拖延症害死人，早期在点点和CSDN上面断断续续写了点东西，但是没能坚持下来，况且技术性也不高，不值得花时间写一些无用的东西，我想着在最后的学生生涯做一些有意义的事情。
+安装过程遇到的问题   电脑为Ubuntu 14.04 64bit。首先就是安装Node.js,开始时候按照官网推荐的nvm方式安装，但是发现   1$ nv">
 
 
 
@@ -113,9 +117,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/19/Ubuntu+Hexo创建个人GitHub Pages博客/"/>
 
-  <title> MAGIC CODE </title>
+  <title> Ubuntu+Hexo创建个人GitHub Pages博客 | MAGIC CODE </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,9 +140,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -215,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -237,125 +239,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/09/17/Mac-下-使用Hexo出现的错误-module错误/" itemprop="url">
-                  Mac下使用Hexo出现module错误
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-17T19:21:53+08:00" content="2016-09-17">
-              2016-09-17
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/09/17/Mac-下-使用Hexo出现的错误-module错误/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/17/Mac-下-使用Hexo出现的错误-module错误/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在Mac使用Hexo写博客，装好环境之后,测试时出现module错误<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123; [Error: Cannot find module &apos;./build/Release/DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; &#125;</div></pre></td></tr></table></figure></p>
-<p>随后Google之，发现出现这个问题的同学不少，基本上是按照如下命令解决的，</p>
-<ul>
-<li><p>重新安装</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo --no-optional</div></pre></td></tr></table></figure>
-</li>
-<li><p>卸载重新安装</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm uninstall hexo</div><div class="line">$ npm install hexo --no-optional</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>但是，这对我没有用呀，仍旧出现这个错误，真心苦恼呀，虽然不影响功能使用，就是看着不爽，于是看到别的同学博客提到的sudo卸载与安装，想起来安装的时候加了权限，于是乎，加权限卸载与重装解决此问题。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ sudo npm uninstall hexo</div><div class="line">$ sudo npm install hexo --no-optional</div></pre></td></tr></table></figure></p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="http://www.jianshu.com/p/13e64c9e2295" target="_blank" rel="external">Mac下配置Github的Hexo博客</a></li>
-<li><a href="http://kikoroc.com/2016/05/04/resolve-hexo-DTraceProviderBindings-MODULE-NOT-FOUND.html" target="_blank" rel="external">解决hexo神烦的DTraceProviderBindings MODULE_NOT_FOUND</a></li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/19/Ubuntu+Hexo创建个人GitHub Pages博客/" itemprop="url">
-                  Ubuntu+Hexo创建个人GitHub Pages博客
-                </a>
+                Ubuntu+Hexo创建个人GitHub Pages博客
               
             
           </h1>
@@ -402,25 +286,27 @@
       
 
       
-        
-          
-            <h2 id="关于安装前的吐槽"><a href="#关于安装前的吐槽" class="headerlink" title="关于安装前的吐槽"></a>关于安装前的吐槽</h2><p>   今天终于抽时间在电脑部署了GitHub博客，真的想说拖延症害死人，早期在点点和CSDN上面断断续续写了点东西，但是没能坚持下来，况且技术性也不高，不值得花时间写一些无用的东西，我想着在最后的学生生涯做一些有意义的事情。</p>
+        <h2 id="关于安装前的吐槽"><a href="#关于安装前的吐槽" class="headerlink" title="关于安装前的吐槽"></a>关于安装前的吐槽</h2><p>   今天终于抽时间在电脑部署了GitHub博客，真的想说拖延症害死人，早期在点点和CSDN上面断断续续写了点东西，但是没能坚持下来，况且技术性也不高，不值得花时间写一些无用的东西，我想着在最后的学生生涯做一些有意义的事情。</p>
 <h2 id="安装过程遇到的问题"><a href="#安装过程遇到的问题" class="headerlink" title="安装过程遇到的问题"></a>安装过程遇到的问题</h2><p>   电脑为Ubuntu 14.04 64bit。首先就是安装Node.js,开始时候按照官网推荐的nvm方式安装，但是发现<br>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ nvm install 0.12</div></pre></td></tr></table></figure></p>
 <p>   此时发现输入这行命令之后，没有任何反应，换了好几版本之后还是不行，最后“灵机一动”：GFW问题，天朝特色，随利用科学上网解决此问题。</p>
 <p>   然后配置好上传到GitHub中，发现出现bad错误，是关于github那一部分在_config.yml中的设置，deploy那一项，冒号之后要加上空格，否则无法识别。<br>   以上就是安装出现的错误，希望能够对大家有帮助。</p>
 <h2 id="关于安装之后的感悟"><a href="#关于安装之后的感悟" class="headerlink" title="关于安装之后的感悟"></a>关于安装之后的感悟</h2><p>   GitHub自家出的文本编辑器Atom实在是很好用，作为一个写东西的利器，值得广而告之。希望每天可以抽时间写点技术含量的东西。写作很让人有成就感，不对，是成功使人愉悦。</p>
 <h3 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h3><p><a href="http://kiya.space/2015/11/10/use-Github-Pages-Hexo-duoshuo-to-set-up-a-blog-basic-steps/" target="_blank" rel="external">使用 Github Pages + Hexo + 多说 搭建博客全过程 - 基础篇</a><br><a href="http://qiutc.me/post/%E4%BD%BF%E7%94%A8hexo-github%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2.html" target="_blank" rel="external">使用hexo+github搭建静态博客</a></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -428,19 +314,32 @@
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/17/Mac-下-使用Hexo出现的错误-module错误/" rel="prev" title="Mac下使用Hexo出现module错误">
+                Mac下使用Hexo出现module错误 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -448,6 +347,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/07/19/Ubuntu+Hexo创建个人GitHub Pages博客/"
+           data-title="Ubuntu+Hexo创建个人GitHub Pages博客" data-url="http://yoursite.com/2016/07/19/Ubuntu+Hexo创建个人GitHub Pages博客/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -467,8 +374,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -504,6 +420,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于安装前的吐槽"><span class="nav-number">1.</span> <span class="nav-text">关于安装前的吐槽</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装过程遇到的问题"><span class="nav-number">2.</span> <span class="nav-text">安装过程遇到的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于安装之后的感悟"><span class="nav-number">3.</span> <span class="nav-text">关于安装之后的感悟</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#参考博客"><span class="nav-number">3.1.</span> <span class="nav-text">参考博客</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -600,6 +527,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
